@@ -1,0 +1,17 @@
+{
+  "name": "harbourtown-permits",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --test-reporter=spec \"permits/test/*.test.ts\" \"test/acceptance/*.test.ts\"",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.7",
+    "typescript": "6.0.3"
+  }
+}
